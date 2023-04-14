@@ -1,0 +1,110 @@
+:root {
+
+    /* Colors */
+    --white-h: 0;
+    --white-s: 0%;
+    --white-l: 100%;
+
+    --light-gray-h: 212;
+    --light-gray-s: 45%;
+    --light-gray-l: 89%;
+
+    --grayish-blue-h: 220;
+    --grayish-blue-s: 15%;
+    --grayish-blue-l: 55%;
+
+    --dark-blue-h: 218;
+    --dark-blue-s: 44%;
+    --dark-blue-l: 22%;
+
+    --white: hsl(var(--white-h), var(--white-s), var(--white-l));
+    --light-gray: hsl(var(--light-gray-h), var(--light-gray-s), var(--light-gray-l));
+    --grayish-blue: hsl(var(--grayish-blue-h), var(--grayish-blue-s), var(--grayish-blue-l));
+    --dark-blue: hsl(var(--dark-blue-h), var(--dark-blue-s), var(--dark-blue-l));
+
+    /* Sizings */
+    --footer-height: 30px;
+
+    --container-padding: 16px;
+    --image-size: 288px;
+
+
+}
+
+/* Simple Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--light-gray);
+
+    display: flex;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+main {
+    height: calc(100vh - var(--footer-height));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: var(--footer-height);
+
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.card {
+    background-color: var(--white);
+    border-radius: 20px;
+    padding: var(--container-padding);
+    overflow: hidden;
+    width: calc(var(--image-size) + (2 * var(--container-padding)));
+}
+
+.card .image {
+    width: var(--image-size);
+    height: var(--image-size);
+
+    border-radius: 10px;
+}
+
+.card .content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.card .content h1 {
+    overflow-wrap: normal;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 27px;
+    color: var(--dark-blue);
+    margin-bottom: 1em;
+}
+
+.card .content p {
+    color: var(--grayish-blue);
+    line-height: 19px;
+    letter-spacing: 0.19px;
+    font-size: 16px;
+    font-weight: 400;
+}
