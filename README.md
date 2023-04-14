@@ -23,8 +23,8 @@ the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/anormandin/fm-qrcode](https://github.com/anormandin/fm-qrcode)
+- Live Site URL: [https://anormandin.github.io/fm-qrcode/](https://anormandin.github.io/fm-qrcode/)
 
 ## My process
 This is a simple challenge that I did to learn how to submit to Frontend Mentor.
